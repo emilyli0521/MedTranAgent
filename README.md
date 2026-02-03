@@ -57,9 +57,17 @@ The agent will continue asking until all required fields are provided:
 ## Project Structure
 
 ```text
-├── agent.py        # Main conversational agent (workflow + state machine)
-├── tools.py        # Pricing and proposal tools
-├── requirements.txt
+├── agent.py                     # Main conversational agent (workflow + state machine)
+├── tools.py                     # Pricing and proposal tools
+├── ingest.py                    # Ingest markdown documents into vector store (RAG indexing)
+├── icf_guidelines.md            # ICF translation guidelines
+├── ifu_guidelines.md            # IFU translation guidelines
+├── protocol_guidelines.md       # Protocol translation guidelines
+├── nda_policy.md                # NDA and confidentiality policy
+├── medical_faq.md               # General medical translation FAQ
+├── medical_pricing.md           # Pricing rules and references
+├── medical_qa_process.md        # QA and review workflow
+├── translator_qualification.md  # Translator qualification requirements
 └── README.md
 ```
 ---
