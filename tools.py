@@ -118,6 +118,4 @@ def build_service_proposal(
         f"- 急件：{rush_text}\n"
         f"- 預估費用：NT${q.estimated_price_twd}\n"
         f"- 預估交期：{q.estimated_days} 個工作天\n"
-        "\n【下一步】\n"
-        "請提供：原文檔、目標語言格式要求、是否需要排版/可編輯檔、交付截止時間。\n"
-    )
+      )
