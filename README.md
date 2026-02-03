@@ -62,7 +62,7 @@ The agent will continue asking until all required fields are provided:
 
 ## How to Run
 
-### 1. Install dependencies
+### 1. Clone the repository
 ```bash
 git clone https://github.com/your-username/MedTranAgent.git
 cd MedTranAgent
