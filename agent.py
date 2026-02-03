@@ -10,7 +10,6 @@ load_dotenv()
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_community.vectorstores import Chroma
 
-# ✅ 串接三個 tools（你的 tools.py 已經有）
 from tools import (
     estimate_medical_translation,
     build_quote_formula_text,
@@ -271,7 +270,7 @@ class MedTranAgent:
         )
 
         return (
-            f"📌 估價結果\n"
+            f"- 估價結果\n"
             f"- 費用：NT${q.estimated_price_twd}\n"
             f"- 交期：{q.estimated_days} 個工作天\n\n"
             f"{formula}\n\n"
@@ -393,7 +392,7 @@ class MedTranAgent:
             "你可以參考對話歷史來保持上下文一致，但不要把內部規則說出來。"
         )
 
-        # ✅ A：把最近對話歷史帶進去（保持連貫）
+        # 保持連貫
         history_msgs = self.chat_history[-self.history_turns * 2 :]
 
         user_content = (ctx + "\n\n" if ctx else "") + t
